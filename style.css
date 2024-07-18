@@ -1,0 +1,155 @@
+body {
+    background-color: #ff8dba;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    width: 100%;  
+    top: 0;
+    right: 10%;
+}
+
+#navi-List {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+li > a {
+    color: #adfeed;
+    text-decoration: none;
+    font-family: nav_text;
+    font-size: 32px;
+}
+
+@font-face {
+    font-family: nav_text;
+    src: url(./fonts/nav.ttf);
+}
+
+li:nth-child(4) a {
+    padding-left: 120%;
+}
+
+li > a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-line {
+    width: 20px;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 4px;
+}
+
+
+
+
+/* MAIN SECTION */
+
+main {
+    margin-top: 10%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#img-donut {
+    /* border-radius: 50% 50% 0 0;
+    transform: rotate(-270deg); */
+}
+
+#donut-man-type {
+    height: 400px;
+}
+
+#draw-first{ 
+    stroke-dasharray: 800; 
+    stroke-dashoffset:800; -moz-animation:dash3 500ms ease-in-out 300ms forwards; -webkit-animation:dash3 500ms ease-in-out 300ms forwards; 
+    animation:dash1 500ms ease-in-out 300ms forwards; 
+} 
+@keyframes dash1{ 0%{stroke-dashoffset:800;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } @-webkit-keyframes dash1{ 0%{stroke-dashoffset:800;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } @-moz-keyframes dash3{ 0%{stroke-dashoffset:800;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } #draw-second{ stroke-dasharray:1700; stroke-dashoffset:1700; -moz-animation:dash2 400ms ease-in-out 500ms forwards; -webkit-animation:dash2 400ms ease-in-out 500ms forwards; animation:dash2 400ms ease-in-out 500ms forwards; } @-webkit-keyframes dash2{ 0%{stroke-dashoffset:1700;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } @-moz-keyframes dash2{ 0%{stroke-dashoffset:0;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } #draw-third{ stroke-dasharray: 800; stroke-dashoffset:800; -moz-animation:dash3 1s ease-in-out 900ms forwards; -webkit-animation:dash3 1s ease-in-out 900ms forwards; animation:dash3 1s ease-in-out 900ms forwards; } @-webkit-keyframes dash3{ 0%{stroke-dashoffset:800;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } @-moz-keyframes dash3{ 0%{stroke-dashoffset:800;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } #draw-fourth{ stroke-dasharray: 800; stroke-dashoffset:800; -moz-animation:dash4 300ms ease-in-out 1s forwards; -webkit-animation:dash4 300ms ease-in-out 1s forwards; animation:dash4 300ms ease-in-out 1s forwards; } @-webkit-keyframes dash4{ 0%{stroke-dashoffset:800;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } @-moz-keyframes dash4{ 0%{stroke-dashoffset:800;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } #draw-fith{ stroke-dasharray: 1600; stroke-dashoffset:1600; -moz-animation:dash5 900ms ease-in-out 1.2s forwards; -webkit-animation:dash5 900ms ease-in-out 1.2s forwards; animation:dash5 900ms ease-in-out 1.2s forwards; } @-webkit-keyframes dash5{ 0%{stroke-dashoffset:1600;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } @-moz-keyframes dash5{ 0%{stroke-dashoffset:1600;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } #draw-sixth{ stroke-dasharray: 800; stroke-dashoffset:800; -moz-animation:dash6 2s ease-in-out 1.8s forwards; -webkit-animation:dash6 2s ease-in-out 1.8s forwards; animation:dash6 2s ease-in-out 1.8s forwards; } @-webkit-keyframes dash6{ 0%{stroke-dashoffset:800;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } @-moz-keyframes dash6{ 0%{stroke-dashoffset:800;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } #draw-seventh{ stroke-dasharray: 800; stroke-dashoffset:800; -moz-animation:dash6 2s ease-in-out 1.8s forwards; -webkit-animation:dash6 2s ease-in-out 1.8s forwards; animation:dash6 2s ease-in-out 1.8s forwards; } #a-digital { fill:#000; fill-opacity:0; stroke-width:.2; stroke-dasharray: 800; stroke-dashoffset:800; -moz-animation:dasha 500ms ease-in-out 2s forwards; -webkit-animation:dasha 500ms ease-in-out 2s forwards; animation:dasha 500ms ease-in-out 2s forwards; transition:transform; } @-webkit-keyframes dasha{ 0% {transform:rotate(-10deg);stroke-dashoffset:800;} 80% {stroke-dashoffset:0;fill-opacity:0;} 100%{transform:scale(1);stroke-dashoffset:0;fill-opacity:1;} } @-moz-keyframes dasha{ 0% {transform:rotate(0deg);stroke-dashoffset:800;} 80% {stroke-dashoffset:0;fill-opacity:0;} 100%{transform:scale(1);stroke-dashoffset:0;fill-opacity:1;} } #the-sweetest { fill:#000; fill-opacity:0; stroke-width:.2; stroke-dasharray: 800; stroke-dashoffset:800; -moz-animation:dasht 500ms ease-in-out 2s forwards; -webkit-animation:dasht 500ms ease-in-out 2s forwards; animation:dasht 500ms ease-in-out 2s forwards; } @-webkit-keyframes dasht{ 0% {transform:rotate(10deg);stroke-dashoffset:800;} 80% {stroke-dashoffset:0;fill-opacity:0;} 100%{transform:scale(1);stroke-dashoffset:0;fill-opacity:1;} } @-moz-keyframes dasht{ 0% {transform:rotate(0deg);stroke-dashoffset:800;} 80% {stroke-dashoffset:0;fill-opacity:0;} 100%{transform:scale(1);stroke-dashoffset:0;fill-opacity:1;} } #line-3{ stroke-dasharray: 1600; stroke-dashoffset:1600; -moz-animation:dash7 400ms ease-in-out 2.7s forwards; -webkit-animation:dash7 400ms ease-in-out 2.7s forwards; animation:dash7 400ms ease-in-out 2.7s forwards; } @-webkit-keyframes dash7{ 0%{stroke-dashoffset:1600;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } @-moz-keyframes dash7{ 0%{stroke-dashoffset:1600;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } #line-2{ stroke-dasharray: 1600; stroke-dashoffset:1600; -moz-animation:dash8 50ms ease-in-out 3s forwards; -webkit-animation:dash8 50ms ease-in-out 3s forwards; animation:dash8 50ms ease-in-out 3s forwards; } @-webkit-keyframes dash8{ 0%{stroke-dashoffset:1600;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } @-moz-keyframes dash8{ 0%{stroke-dashoffset:1600;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } #line-1{ stroke-dasharray: 1600; stroke-dashoffset:1600; -moz-animation:dash9 900ms ease-in-out 3.2s forwards; -webkit-animation:dash9 900ms ease-in-out 3.2s forwards; animation:dash9 900ms ease-in-out 3.2s forwards; } @-webkit-keyframes dash9{ 0%{stroke-dashoffset:1600;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } @-moz-keyframes dash9{ 0%{stroke-dashoffset:1600;} 80%{stroke-dashoffset:0;fill-opacity:0;} 100%{stroke-dashoffset:0;fill-opacity:1;} } .st0{fill:none;stroke:#E9CE91;stroke-width:5.4;stroke-linecap:round;stroke-linejoin:round;} .st1{fill:none;stroke:#FFC0D9;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st2{fill:none;stroke:#FFFFFF;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st3{fill:#D2FEED;stroke:#FFFFFF;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st4{fill:#ADFEED;stroke:#E9CE91;stroke-width:5.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:800;stroke-dashoffset:800;}
+
+
+/*FOOTER */
+footer {
+    width: 100%;
+    height: 75px;
+    margin-top: 10%;
+    bottom: 0%;
+    position: fixed;
+    z-index: 2;
+  } 
+
+  
+
+
+  .text {
+display: flex;
+justify-content: center;
+text-align: center;
+  }
+
+h2 {
+    font-family: button_text;
+    font-size: 50px;
+   
+}
+  @font-face {
+    font-family: button_text;
+    src: url(./fonts/Pokemon\ Hollow.ttf);
+  }
+
+
+  @media only screen and (max-width: 486px) {
+    .navbar {
+        flex-direction: column;
+        position: relative;
+        margin-bottom: -20%;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+  
+    ul {
+        display: none;
+    }
+  
+    li, a {
+        display: block;
+        padding: 10px 10px;
+        text-align: center;
+    }
+  
+    #navi-List.active {
+        display: block;
+    }
+
+    li:nth-child(4) a {
+        padding-left: 0%;
+    }
+
+    main {
+        margin-top: 25%;
+    }
+}
